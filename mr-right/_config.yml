@@ -1,0 +1,17 @@
+title: "walking to you"          
+tagline: "keep going, my love"
+author: "Lily"                      
+
+baseurl: "lilymedina.github.io/mr-right"
+url: ""
+
+permalink: /moment/:title/
+timezone: Asia/Tokyo
+
+paginate: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

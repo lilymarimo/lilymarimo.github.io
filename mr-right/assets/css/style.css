@@ -1,0 +1,287 @@
+/* ============================================================
+   For You, Someday — a letter-collection timeline
+   Palette: warm ivory paper, dusty rose, deep plum, muted gold
+   ============================================================ */
+
+:root {
+  --paper:       #FBF6F0;
+  --paper-deep:  #F5ECE4;
+  --blush:       #EBD3CD;
+  --rose:        #C98B92;
+  --wine:        #7A3B4E;
+  --gold:        #C6A15B;
+  --ink:         #453A3C;
+  --ink-soft:    #8A7B7C;
+
+  --thread: 1.5px;
+
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body:    "EB Garamond", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(120% 60% at 50% -10%, var(--paper-deep) 0%, var(--paper) 55%) fixed;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.18rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 6rem;
+}
+
+::selection { background: var(--blush); color: var(--wine); }
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  text-align: center;
+  padding: 5.5rem 0 3rem;
+}
+
+.eyebrow {
+  font-family: var(--body);
+  font-style: italic;
+  color: var(--rose);
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-size: 0.95rem;
+  margin: 0 0 0.9rem;
+}
+
+.masthead__title {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 8vw, 3.9rem);
+  line-height: 1.05;
+  color: var(--wine);
+  margin: 0;
+  letter-spacing: 0.005em;
+}
+
+.masthead__tagline {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 1.22rem;
+  max-width: 26rem;
+  margin: 1rem auto 0;
+}
+
+.masthead__count {
+  font-family: var(--display);
+  font-size: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 2rem;
+}
+
+.masthead__count::before,
+.masthead__count::after {
+  content: "";
+  display: inline-block;
+  width: 2.2rem;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.6;
+  vertical-align: middle;
+  margin: 0 0.9rem;
+}
+
+/* ---------- timeline thread ---------- */
+
+.timeline {
+  position: relative;
+  margin: 1rem 0 0;
+  padding-left: 2.4rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.42rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: var(--thread);
+  background: linear-gradient(var(--gold), var(--blush) 70%, transparent);
+  opacity: 0.75;
+}
+
+/* ---------- a single moment ---------- */
+
+.moment {
+  position: relative;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid var(--blush);
+  border-radius: 4px 4px 14px 14px;
+  padding: 1.9rem 2rem 1.6rem;
+  margin: 0 0 2.6rem;
+  box-shadow: 0 10px 30px -22px rgba(122, 59, 78, 0.55);
+
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.moment.is-in { opacity: 1; transform: none; }
+
+/* the little knot on the thread */
+.moment__knot {
+  position: absolute;
+  left: -2.02rem;
+  top: 2.1rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--gold);
+}
+.moment__knot::after {
+  content: "";
+  position: absolute;
+  inset: 2.5px;
+  border-radius: 50%;
+  background: var(--rose);
+}
+
+.moment__date {
+  font-family: var(--display);
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 0.5rem;
+}
+
+.moment__title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1.15;
+  margin: 0 0 0.7rem;
+  color: var(--wine);
+}
+.moment__title a {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(var(--rose), var(--rose));
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.35s ease;
+}
+.moment__title a:hover,
+.moment__title a:focus-visible { background-size: 100% 1px; }
+
+.moment__photo {
+  margin: 0.4rem 0 1.1rem;
+}
+.moment__photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid var(--blush);
+  box-shadow: 0 8px 22px -18px rgba(69, 58, 60, 0.7);
+}
+
+.moment__body > *:first-child { margin-top: 0; }
+.moment__body > *:last-child  { margin-bottom: 0; }
+.moment__body p { margin: 0 0 1rem; }
+
+.moment__body a {
+  color: var(--wine);
+  text-decoration-color: var(--rose);
+  text-underline-offset: 3px;
+}
+
+.moment__body blockquote {
+  margin: 1.2rem 0;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--rose);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.moment__body em { color: var(--wine); }
+
+.moment__sign {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--rose);
+  text-align: right;
+  margin: 1.4rem 0 0;
+}
+
+/* ---------- single moment page ---------- */
+
+.single { padding: 3.5rem 0 1rem; }
+
+.single__back {
+  font-family: var(--display);
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 1rem;
+}
+.single__back:hover { color: var(--wine); }
+
+.single__title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.1rem, 6vw, 2.9rem);
+  line-height: 1.12;
+  color: var(--wine);
+  margin: 0.6rem 0 1rem;
+}
+
+.single__body { font-size: 1.24rem; }
+
+/* ---------- misc ---------- */
+
+.empty {
+  text-align: center;
+  font-style: italic;
+  color: var(--ink-soft);
+  padding: 2rem 0;
+}
+
+.footeret {
+  text-align: center;
+  margin-top: 2rem;
+}
+.footeret__mark {
+  color: var(--gold);
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+/* ---------- focus + motion ---------- */
+
+a:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moment { opacity: 1; transform: none; transition: none; }
+}
+
+@media (max-width: 30rem) {
+  body { font-size: 1.1rem; }
+  .moment { padding: 1.5rem 1.4rem 1.3rem; }
+  .timeline { padding-left: 1.9rem; }
+  .moment__knot { left: -1.52rem; }
+}
