@@ -126,7 +126,7 @@ body {
 
 .entry__date {
   font-family: var(--display);
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold);
@@ -136,7 +136,7 @@ body {
 .entry__title {
   font-family: var(--display);
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   margin: 0;
 }
