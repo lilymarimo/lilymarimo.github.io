@@ -3,12 +3,12 @@ layout: default
 ---
 
 <header class="masthead">
-  <p class="eyebrow">a keepsake</p>
+  <p class="eyebrow">my love</p>
   <h1 class="masthead__title">{{ site.title }}</h1>
   <p class="masthead__tagline">{{ site.tagline }}</p>
   {% assign count = site.posts | size %}
   {% if count > 0 %}
-    <p class="masthead__count">{{ count }} moment{% if count != 1 %}s{% endif %} kept so far</p>
+    <p class="masthead__count">{{ count }} moment{% if count != 1 %}s{% endif %} kept</p>
   {% endif %}
 </header>
 
