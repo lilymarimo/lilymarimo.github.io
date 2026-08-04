@@ -8,8 +8,6 @@ url: ""
 permalink: /moment/:title/
 timezone: Asia/Tokyo
 
-paginate: false
-
 exclude:
   - README.md
   - Gemfile
