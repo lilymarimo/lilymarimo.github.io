@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<header class="masthead">
+  <p class="eyebrow">a keepsake</p>
+  <h1 class="masthead__title">{{ site.title }}</h1>
+  <p class="masthead__tagline">{{ site.tagline }}</p>
+  {% assign count = site.posts | size %}
+  {% if count > 0 %}
+    <p class="masthead__count">{{ count }} moment{% if count != 1 %}s{% endif %} kept so far</p>
+  {% endif %}
+</header>
+
+<section class="timeline" aria-label="Timeline of moments">
+  {% for post in site.posts %}
+    <article class="entry">
+      <span class="entry__knot" aria-hidden="true"></span>
+      <p class="entry__date">{{ post.date | date: "%B %-d, %Y" }}</p>
+      {% if post.title and post.title != "" %}
+        <h2 class="entry__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% else %}
+        <h2 class="entry__title entry__title--untitled"><a href="{{ post.url | relative_url }}">open this moment →</a></h2>
+      {% endif %}
+    </article>
+  {% endfor %}
+
+  {% if site.posts.size == 0 %}
+    <p class="empty">No moments yet. Add your first one and it will appear right here.</p>
+  {% endif %}
+</section>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="single">
+  <a class="single__back" href="{{ '/' | relative_url }}">← all moments</a>
+
+  <p class="single__date">{{ page.date | date: "%B %-d, %Y" }}</p>
+
+  {% if page.title and page.title != "" %}
+    <h1 class="single__title">{{ page.title }}</h1>
+  {% endif %}
+
+  {% if page.image %}
+    <div class="single__photo">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title | default: 'a moment' }}">
+    </div>
+  {% endif %}
+
+  <div class="single__body">
+    {{ content }}
+  </div>
+
+  <p class="single__sign">— {{ site.author }}</p>
+</article>
