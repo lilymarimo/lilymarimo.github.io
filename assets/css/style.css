@@ -1,9 +1,3 @@
-/* ============================================================
-   For You, Someday — a letter-collection timeline
-   Warm cream paper, dusty rose, deep plum, muted gold.
-   Index shows date + title only; full writing lives on each page.
-   ============================================================ */
-
 :root {
   --paper:       #F5ECDD;   /* warm cream */
   --paper-deep:  #EFE3D0;
@@ -57,7 +51,7 @@ body {
 .masthead__title {
   font-family: var(--display);
   font-weight: 500;
-  font-size: clamp(2.6rem, 8vw, 3.9rem);
+  font-size: clamp(2rem, 5vw, 2.6rem);
   line-height: 1.05;
   color: var(--wine);
   margin: 0;
