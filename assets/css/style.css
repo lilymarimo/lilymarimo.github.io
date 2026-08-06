@@ -207,7 +207,11 @@ body {
   box-shadow: 0 10px 26px -20px rgba(74, 62, 59, 0.7);
 }
 
-.single__body { font-size: 1.24rem; }
+.single__body { 
+  font-size: 1.24rem; 
+  text-align: justify;
+  hyphens: auto;
+}
 .single__body > *:first-child { margin-top: 0; }
 .single__body p { margin: 0 0 1.1rem; }
 .single__body a {
