@@ -1,0 +1,15 @@
+---
+layout: moment           
+title: "crying again"   
+date: 2026-08-18         
+---
+
+Hello, husband. Are you asleep? I just got back from my experiment in Yokohama. I arrived at around 10 pm, took a shower, cook something for dinner, and it is almost midnight now. I was crying while cooking. I just realized that my legs always gave up when I couldn't remain composed. I don't know, perhaps I miss him, I am sorry my love. I don't particularly miss anything in him though, just some memories that suddenly get replayed in my head. Probably because I haven't thought about it for weeks and it is my period. Menstrual period always bring the feelings back, I guess that's normal.<br>
+<br>
+I wrote a piece about a freedom to choose a life without partner in my blog yesterday. I don't know, it just felt right. I am not even sure that we are destined to meet in this world. Perhaps, we are not. I am not tired of walking, but I just don't know if we are indeed walking together, or am I just walking there by myself. I don't lose my faith in Him, but is it true that Allah created you for me? I mean in this world. I think I need to read the Qur'an again.<br>
+<br>
+I also hate the fact that it seems like I am capable of getting attracted to another person after this lengthy heartbreak. I finally felt like I was free, eventually I could do anything I want, I mean I could go to Africa and volunteer there, or learn anything I want in my forties, but why is it that I am attracted to yet another man? I am sick of it. Why does God let my heart experience this after a profound heartbreak? I haven't even met this person I am recently attracted to. We had a call once with a mutual friend. I do not know him, at all. We texted once, it was about a study plan. He seems to be emotionally unavailable. He is funny too. He remembers where my hometown is. He seems to enjoy hiking too. I am sorry my love, I shouldn't talk about him. I just hate the fact that I may end up in the old pattern of getting attracted to emotionally unavailable men and getting my heart broken, again.<br>
+<br>
+My supervisor just sent an email, asking for a lunch on Saturday haha. I wonder whether my JSPS application will pass. If it pass, then I need to stay longer at the lab, which is not bad at all though. I think I know now how I should my life. I just wish that at least I don't feel the need of a companion, of wanting your presence in my life, but I guess humans are destined to live together, aren't they? I just feel like I can't reconcile this fact. I feel like I want to take an appointment for my menopause to arrive sooner haha. My love, I do not like walking alone, I really really really hate it. Not that I can't do it, I am capable, overly capable in fact, I just hate that I feel like I want you in my life, when I do not even know whether you exist, at all.<br>
+<br>
+I love you, XOXO.
