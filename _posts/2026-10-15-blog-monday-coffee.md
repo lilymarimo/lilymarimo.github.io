@@ -1,7 +1,7 @@
 ---
 layout: moment           
 title: "blog: The Monday Coffee"   
-date: 2026-10-16         
+date: 2026-10-15         
 ---
 
 It was probably my first decaf coffee I had this year. I haven't had one since forever, although I know I like the taste. It paired very well with the pumpkin cheesecake. It was the only hot beverage I could order from the menu. I guess God lets you see a part of me when I spoiled myself.<br>
