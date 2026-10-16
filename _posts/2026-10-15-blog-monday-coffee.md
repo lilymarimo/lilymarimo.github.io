@@ -1,6 +1,6 @@
 ---
 layout: moment           
-title: "blog: The Monday Coffee"   
+title: "The Monday Coffee (blog)"   
 date: 2026-10-15         
 ---
 
